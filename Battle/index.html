@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego RPG</title>
+</head>
+<body>
+  <h1>Bienvenido a Immortals</h1>
+  <button onclick="seleccionarPersonaje()">Seleccionar Personaje</button>
+
+  <script>
+    function seleccionarPersonaje() {
+      window.location.href = "seleccion_personaje.html";
+    }
+  </script>
+
+<script src="../Battle/audio.js"></script>
+  <script>
+    // Llama a la función para reproducir el audio cuando la ventana se carga completamente
+    window.onload = reproducirAudio;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+[10:32] Fernando Martínez
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap" rel="stylesheet">    <title>Document</title>
+
+</head>
+
+<body>
+
+ 
+
+ 
+
+<style>
+
+     .card
+
+     {
+
+        display: inline-block;
+
+        margin-left: 250px; /* Ajusta los márgenes según tus necesidades */
+
+        margin-top: 10px; /* Ajusta los márgenes según tus necesidades */
+
+        text-align: center; /* Centra el contenido horizontalmente */
+
+    }
+
+ 
+
+ 
+
+ 
+
+ 
+
+    #seleccion{
+
+        position: static;
+
+        font-size: 60px;
+
+        text-align: center;
+
+        font-family: 'Pixelify Sans', cursive;
+
+    }
+
+</style>
+
+ 
+
+    <h1 id="seleccion">Selecciona un personaje</h1>
+
+ 
+
+    <article class="card">
+
+        <img src="personaje1.png" alt="">
+
+        <img src="fondo2.png" alt="">
+
+    </article>
+
+ 
+
+    <article class="card">
+
+        <img src="Personaje2.jpg" alt="">
+
+        <img src="Fondo1.jpeg" alt="">
+
+    </article>
+
+<style>
+
+    article{
+
+        position: relative;
+
+        width: 250px;
+
+        transition: all .3s ease;
+
+    }
+
+ 
+
+    article img:first-child{
+
+        box-shadow: 0 60px 60px
+
+    -60px rgba(0, 30, 255, 0.5);
+
+        border-radius: 4px;
+
+        object-fit: cover;
+
+        width: 100%;
+
+   
+
+    }
+
+ 
+
+    article img:last-child{
+
+    position: absolute;    
+
+    width: 200px;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    margin: auto;
+
+    transform: translateY(25%);
+
+    transition: .3 ease;
+
+    opacity: 0;
+
+    }
+
+ 
+
+article:hover{
+
+transform:
+
+    perspective(250px)
+
+    rotateX(10deg)
+
+    translateY(-5%)
+
+    translateZ(0);
+
+}
+
+ 
+
+article::before {
+
+    content: '';
+
+    position: absolute;
+
+    bottom: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background-image: linear-gradient(
+
+        to bottom,
+
+        transparent 10%,
+
+        rgba(0, 0, 0, 0.5) 50%,
+
+        rgba(0, 0, 0) 95%
+
+    );
+
+    opacity: 0;
+
+    transition: all .3s ease;
+
+}
+
+ 
+
+article:hover::before{
+
+    opacity: 1;
+
+}
+
+ 
+
+article:hover img:last-child{
+
+    opacity: 1;
+
+    transform: translateY(10%);
+
+}
+
+ 
+
+ 
+
+</style>
+
+ 
+
+ 
+
+ 
+
+</body>
+
+</html>

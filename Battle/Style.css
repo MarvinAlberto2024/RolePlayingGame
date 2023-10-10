@@ -1,0 +1,85 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#carousel {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#carousel img {
+  width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+#carousel img:hover {
+  border: 2px solid #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #battle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  #player-stats, #enemy-stats {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
+}
+
+

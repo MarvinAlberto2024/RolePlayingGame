@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selecciona tu Personaje</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <h1>Selecciona tu Personaje</h1>
+  <div id="carousel">
+    <img src="../Battle/personajes/personaje1.png" alt="Personaje 1">
+    <img src="../Battle/personajes/Personaje2.jpg" alt="Personaje 2">
+    <!--Para agregar más imágenes para otros personajes UWU -->
+  </div>
+  <button onclick="empezarJuego()">Empieza la aventura</button>
+
+  <script src="audioMapa.JS"></script>
+  <script>
+    // Llama a la función para reproducir el audio cuando la ventana se carga completamente
+    window.onload = reproducirAudio;
+  </script>
+
+  <script>
+    function empezarJuego() {
+      window.location.href = "maingame.html";
+    }
+  </script>
+</body>
+</html>
